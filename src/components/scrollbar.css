@@ -1,0 +1,71 @@
+.jv-scrollbar {
+  overflow: hidden;
+  position: relative
+}
+
+.jv-scrollbar:active>.jv-scrollbar__bar,
+.jv-scrollbar:focus>.jv-scrollbar__bar,
+.jv-scrollbar:hover>.jv-scrollbar__bar {
+  opacity: 1;
+  -webkit-transition: opacity .34s ease-out;
+  transition: opacity .34s ease-out
+}
+
+.jv-scrollbar__wrap {
+  overflow: scroll;
+  height: 100%
+}
+
+.jv-scrollbar__wrap--hidden-default::-webkit-scrollbar {
+  width: 0;
+  height: 0
+}
+
+.jv-scrollbar__thumb {
+  position: relative;
+  display: block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border-radius: inherit;
+  background-color: rgba(144, 147, 153, .3);
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s
+}
+
+.jv-scrollbar__thumb:hover {
+  background-color: rgba(144, 147, 153, .5)
+}
+
+.jv-scrollbar__bar {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  z-index: 1;
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transition: opacity .12s ease-out;
+  transition: opacity .12s ease-out
+}
+
+.jv-scrollbar__bar.is-vertical {
+  width: 6px;
+  top: 2px
+}
+
+.jv-scrollbar__bar.is-vertical>div {
+  width: 100%
+}
+
+.jv-scrollbar__bar.is-horizontal {
+  height: 6px;
+  left: 2px
+}
+
+.jv-scrollbar__bar.is-horizontal>div {
+  height: 100%
+}
+
+.jv-scrollbar__wrap {
+  overflow-x: hidden;
+}

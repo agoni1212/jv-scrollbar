@@ -1,29 +1,10 @@
 # jv-scrollbar
 
-## Project setup
-```
-yarn install
-```
+>  A Single Scrollbar Component for Vue , reference Element UI
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## Build Setup
 
-### Compiles and minifies for production
+``` bash
+npm install jv-scrollbar
+yarn add jv-scrollbar
 ```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

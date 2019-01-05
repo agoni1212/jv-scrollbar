@@ -1,13 +1,31 @@
 {
   "name": "jv-scrollbar",
-  "version": "0.1.0",
-  "private": true,
+  "description": "A Vue Component for Scrollbar",
+  "version": "0.8.0",
+  "author": "agoni1212 <agoni1212@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/jv-scrollbar.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agoni1212/jv-scrollbar.git"
+  },
+  "keywords": [
+    "vue",
+    "component",
+    "scroll",
+    "scrollbar"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "resize-observer-polyfill": "^1.5.1",
+    "vue": "^2.5.21"
+  },
+  "peerDependencies": {
     "vue": "^2.5.21"
   },
   "devDependencies": {
@@ -15,13 +33,26 @@
     "@vue/cli-plugin-eslint": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "vue-loader": "^13.0.5",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
   },
   "eslintConfig": {
     "root": true,
     "env": {
+      "browser": true,
       "node": true
     },
     "extends": [
@@ -31,6 +62,9 @@
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
+    },
+    "globals": {
+      "window": true
     }
   },
   "postcss": {
