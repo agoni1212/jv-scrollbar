@@ -2,6 +2,8 @@
 
 >  A Single Scrollbar Component for Vue , reference Element UI
 
+[![NPM version](https://img.shields.io/npm/v/jv-scrollbar.svg?style=flat)](https://npmjs.org/package/jv-scrollbar) [![NPM downloads](http://img.shields.io/npm/dm/jv-scrollbar.svg?style=flat)](https://npmjs.org/package/jv-scrollbar)
+
 ## Install
 
 ``` bash
