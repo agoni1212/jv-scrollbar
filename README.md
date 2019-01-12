@@ -15,7 +15,7 @@ yarn add jv-scrollbar
 import Vue from 'vue'
 import JvScrollbar from 'jv-scrollbar'
 
-Vue.use(JvScrollbar)
+Vue.component('jv-scrollbar', JvScrollbar)
 
 // or
 import JvScrollbar from 'jv-scrollbar'
