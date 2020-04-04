@@ -1,7 +1,7 @@
 {
   "name": "jv-scrollbar",
   "description": "A Vue Component for Scrollbar",
-  "version": "0.6.21",
+  "version": "0.6.22",
   "author": "agoni1212 <agoni1212@gmail.com>",
   "license": "MIT",
   "private": false,
